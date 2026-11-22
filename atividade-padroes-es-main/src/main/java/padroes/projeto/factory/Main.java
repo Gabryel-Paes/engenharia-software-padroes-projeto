@@ -11,6 +11,12 @@ public class Main {
         CampoTexto campoTexto = fabrica.criarCampoTexto();
         System.out.println(campoTexto.renderizar());
 
-        //TODO: continuar demonstração de uso do código
-     }
+        fabrica = InterfaceFactory.getFactory("escuro");
+
+        botao = fabrica.criarBotao();
+        System.out.println(botao.renderizar());
+
+        campoTexto = fabrica.criarCampoTexto();
+        System.out.println(campoTexto.renderizar());
+    }
 }
